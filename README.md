@@ -1,5 +1,6 @@
 ## Demo PBI
-Este repositório contém um Power BI Project (PBIP ou PBIR) para workflows reutilizáveis PBI
+
+Este repositório contém um Power BI Project (PBIP ou PBIR) para demonstrações de workflows reutilizáveis PBI
 
 ### Pré-requisitos 
 
