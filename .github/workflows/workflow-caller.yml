@@ -2,9 +2,9 @@ on:
   push:
     branches:
       - develop
-      - master    
+      - master
     paths:
-      - '**/src/**'
+      - "**/src/**"
 
 jobs:
   workflow-called:
