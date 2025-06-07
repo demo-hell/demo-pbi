@@ -1,28 +1,16 @@
-# Workflow de Demonstração do Power BI
+## Demo PBI
+Este repositório contém um Power BI Project (PBIP ou PBIR) para workflows reutilizáveis PBI
 
-## O que é isso?  
+### Pré-requisitos 
 
-Este repositório é um exemplo de como trabalhar em colaboração com projetos Power BI usando Git e GitHub Workflow, resolvendo conflitos e construindo um projeto paralelo de exemplo.  
-Ele demonstra o uso de um cenário de CI/CD para projetos Microsoft Power BI PRO utilizando [fabric-cicd](https://microsoft.github.io/fabric-cicd/latest/) e GitHub Actions.  
+| Nome                   | Tipo    | Nivel       | Descrição                  |
+|:---                    |:---     |:---         |:---                        |   
+|FABRIC_CLIENT_ID        |secret   |organization |Service Principal Azure AD  |  
+|FABRIC_CLIENT_SECRET    |secret   |organization |Service Principal Azure AD  |  
+|FABRIC_TENANT_ID        |secret   |organization |Service Principal Azure AD  |  
+|FABRIC_WORKSPACE_ID_DEV |variable |repository   |Workspace PowerBI ID DEV    |  
+|FABRIC_WORKSPACE_ID_PRD |variable |repository   |Workspace PowerBI ID DEV    |
 
-## Instalação  
-
-- Faça um fork deste repositório  
-- Configure os segredos do SPN no GitHub Actions secrets
-
-
-|Nome|Valor|  
-|---|---|  
-|FABRIC_CLIENT_ID|Seu Client ID do Service Principal da App ID do Entra|  
-|FABRIC_CLIENT_SECRET|Seu Secret do Service Principal da App ID do Entra|  
-|FABRIC_TENANT_ID|Seu Tenant ID|  
-
-
-Se executar localmente, na primeira vez instale os requisitos com:  
-
-```bash
-$ pip install -r requirements.txt  
-``` 
 
 
 
