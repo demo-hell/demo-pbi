@@ -11,4 +11,4 @@ jobs:
     uses: demo-hell/reusables-workflows-pbi/.github/workflows/pbi.yml@master
     secrets: inherit
     with:
-      FABRIC_WORKSPACE_ID: "${{ github.ref == 'refs/heads/master' ? vars.FABRIC_WORKSPACE_ID_PRD : github.ref == 'refs/heads/develop' ? vars.FABRIC_WORKSPACE_ID_DEV : '' }}"
+      FABRIC_WORKSPACE_ID: ${{ github.ref == 'refs/heads/master' && vars.FABRIC_WORKSPACE_ID_PRD || vars.FABRIC_WORKSPACE_ID_DEV }}
